@@ -1,7 +1,7 @@
 import './index.css'
 import BannerImage from "./assets/BannerImage.png";
 import Hassle from "./assets/Hassle.png";
-import Hero from "./assets/hero.png";
+//import Hero from "./assets/hero.png";
 import Regulatory from "./assets/regulatory.png";
 import Risk from "./assets/risk.png";
 import SectionImage from "./assets/sectionImage.png";
@@ -252,7 +252,7 @@ function App() {
             <button
               className="
                 w-[213px]
-                h-[46px]
+                h-11.5
 
                 bg-indigo-600
                 text-white
@@ -268,7 +268,7 @@ function App() {
             <button
               className="
                 w-[213px]
-                h-[46px]
+                h-11.5
                 border-2
                 border-indigo-600
 
@@ -287,7 +287,7 @@ function App() {
         </div>
 
         {/* Right Image */}
-        <div className="relative h-[607px] w-[739.13px]">
+        <div className="relative h-151.75 w-[739.13px]">
 
           <img
             src={BannerImage}
@@ -346,7 +346,7 @@ function App() {
               <img
                 src={SectionImage}
                 alt="section"
-                className="w-full max-w-[500px]"
+                className="w-full max-w-125"
               />
 
             </div>
