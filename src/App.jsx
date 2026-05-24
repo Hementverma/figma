@@ -1,13 +1,12 @@
 import './index.css'
 import BannerImage from "./assets/BannerImage.png";
 import Hassle from "./assets/Hassle.png";
-//import Hero from "./assets/hero.png";
 import Regulatory from "./assets/regulatory.png";
 import Risk from "./assets/risk.png";
 import SectionImage from "./assets/sectionImage.png";
 import UnderlineVector from "./assets/underline-Vector.png";
 import Vector from "./assets/Vector.png";
-import logo from "./assets/logo.png";
+import logo from "./assets/Logo.png";
 
 function App() {
   return (
@@ -18,11 +17,9 @@ function App() {
 
         <div
           className="
-            max-w-[1440px]
-            mx-auto
-
-            h-[54px]
-            md:h-[100px]
+            max-w-360
+            h-13.5
+            md:h-25
 
             px-4
             md:px-8
@@ -42,7 +39,7 @@ function App() {
               alt="logo"
               className="
                 w-[158.71px]
-                h-[58px]
+                h-14.5
                 object-contain
               "
             />
@@ -138,8 +135,8 @@ function App() {
                 items-center
                 justify-center
 
-                w-[38px]
-                h-[38px]
+                w-9.5
+                h-9.5
 
                 rounded-md
               "
@@ -147,9 +144,9 @@ function App() {
 
               <div className="space-y-1">
 
-                <div className="w-5 h-[2px] bg-black rounded-full"></div>
-                <div className="w-5 h-[2px] bg-black rounded-full"></div>
-                <div className="w-5 h-[2px] bg-black rounded-full"></div>
+                <div className="w-5 h-0.5 bg-black rounded-full"></div>
+                <div className="w-5 h-0.5 bg-black rounded-full"></div>
+                <div className="w-5 h-0.5 bg-black rounded-full"></div>
 
               </div>
 
@@ -251,7 +248,7 @@ function App() {
 
             <button
               className="
-                w-[213px]
+                w-53.25
                 h-11.5
 
                 bg-indigo-600
@@ -267,7 +264,7 @@ function App() {
 
             <button
               className="
-                w-[213px]
+                w-53.25
                 h-11.5
                 border-2
                 border-indigo-600
@@ -323,20 +320,6 @@ function App() {
                 For Research Analysts
 
               </h2>
-
-              {/* Arrow Image */}
-              <img
-                src={Vector}
-                alt="arrow"
-                className="
-                  absolute
-                  -right-10
-                  top-20
-
-                  w-16
-                  lg:w-20
-                "
-              />
 
             </div>
 
@@ -395,7 +378,6 @@ function App() {
                   alt="icon"
                   className="w-10 h-10"
                 />
-
                 <div>
 
                   <h3 className="text-2xl font-semibold">
