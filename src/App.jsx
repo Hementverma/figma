@@ -1,5 +1,5 @@
 import './index.css'
- import BannerImage from "./assets/BannerImage.png";
+import BannerImage from "./assets/BannerImage.png";
 import Hassle from "./assets/Hassle.png";
 import Hero from "./assets/hero.png";
 import Regulatory from "./assets/regulatory.png";
@@ -8,154 +8,158 @@ import SectionImage from "./assets/sectionImage.png";
 import UnderlineVector from "./assets/underline-Vector.png";
 import Vector from "./assets/Vector.png";
 import logo from "./assets/logo.png";
+
 function App() {
   return (
     <div className="min-h-screen bg-[#f5f5f7]">
-      
+
       {/* Navbar */}
       <nav className="w-full bg-[#f5f5f7] border-b border-gray-200">
 
-  <div
-    className="
-      max-w-[1440px]
-      mx-auto
+        <div
+          className="
+            max-w-[1440px]
+            mx-auto
 
-      h-13.5
-      md:h-[100px]
+            h-[54px]
+            md:h-[100px]
 
-      px-4
-      md:px-8
-      lg:px-14
+            px-4
+            md:px-8
+            lg:px-14
 
-      flex
-      items-center
-      justify-between
-    "
-  >
+            flex
+            items-center
+            justify-between
+          "
+        >
 
-    {/* Logo */}
-   <div className="flex items-center gap-2 md:gap-3">
+          {/* Logo */}
+          <div className="flex items-center gap-2 md:gap-3">
 
-  {/* Logo Image */}
-  <img
-    src={logo}
-    alt="logo"
-    className="
-    w-158.71px
-    h-58px
-    "
-  />
-</div>
+            <img
+              src={logo}
+              alt="logo"
+              className="
+                w-[158.71px]
+                h-[58px]
+                object-contain
+              "
+            />
 
-    {/* Menu */}
-    <ul
-      className="
-        hidden
-        lg:flex
+          </div>
 
-        items-center
+          {/* Menu */}
+          <ul
+            className="
+              hidden
+              lg:flex
 
-        gap-5
-        lg:gap-10
+              items-center
 
-        text-[13px]
-        lg:text-[15px]
+              gap-5
+              lg:gap-10
 
-        font-medium
-        text-black
-      "
-    >
+              text-[13px]
+              lg:text-[15px]
 
-      <li className="text-[#4F5DE4]">Home</li>
-      <li>About Us</li>
-      <li>Our Services</li>
-      <li>Pricing</li>
-      <li>FAQ</li>
-      <li>Contact</li>
+              font-medium
+              text-black
+            "
+          >
 
-    </ul>
+            <li className="text-[#4F5DE4]">Home</li>
+            <li>About Us</li>
+            <li>Our Services</li>
+            <li>Pricing</li>
+            <li>FAQ</li>
+            <li>Contact</li>
 
-   {/* Menu + Contact Button */}
-<div className="flex items-center gap-3">
+          </ul>
 
-  {/* Contact Button */}
- <button
-  className="
-    hidden md:flex
+          {/* Menu + Contact Button */}
+          <div className="flex items-center gap-3">
 
-    bg-[#4F5DE4]
-    text-white
+            {/* Contact Button */}
+            <button
+              className="
+                hidden md:flex
 
-    rounded-lg
+                bg-[#4F5DE4]
+                text-white
 
-    items-center
-    justify-center
+                rounded-lg
 
-    gap-2
+                items-center
+                justify-center
 
-    transition-all
-    duration-300
+                gap-2
 
-    hover:bg-[#3d4bdd]
+                transition-all
+                duration-300
 
-    px-3 py-2
-    md:px-5 md:py-3
+                hover:bg-[#3d4bdd]
 
-    text-[12px]
-    md:text-[14px]
-  "
->
+                px-3 py-2
+                md:px-5 md:py-3
 
-  {/* White Transparent Phone Icon */}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={2}
-    stroke="white"
-    className="w-4 h-4 opacity-80"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M2.25 4.5c0 9.941 8.059 18 18 18h2.25a1.5 1.5 0 001.5-1.5v-3.75a1.5 1.5 0 00-1.28-1.482l-4.125-.59a1.5 1.5 0 00-1.516.64l-.903 1.204a12.042 12.042 0 01-5.482-5.482l1.204-.903a1.5 1.5 0 00.64-1.516l-.59-4.125A1.5 1.5 0 009.75 3H6A1.5 1.5 0 004.5 4.5v0z"
-    />
-  </svg>
+                text-[12px]
+                md:text-[14px]
+              "
+            >
 
-  <span>
-    Contact Us
-  </span>
+              {/* Phone Icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="white"
+                className="w-4 h-4 opacity-80"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.25 4.5c0 9.941 8.059 18 18 18h2.25a1.5 1.5 0 001.5-1.5v-3.75a1.5 1.5 0 00-1.28-1.482l-4.125-.59a1.5 1.5 0 00-1.516.64l-.903 1.204a12.042 12.042 0 01-5.482-5.482l1.204-.903a1.5 1.5 0 00.64-1.516l-.59-4.125A1.5 1.5 0 009.75 3H6A1.5 1.5 0 004.5 4.5v0z"
+                />
+              </svg>
 
-</button>
-  {/* Menu Icon */}
-  <button
-    className="
-      flex lg:hidden
+              <span>
+                Contact Us
+              </span>
 
-      items-center
-      justify-center
+            </button>
 
-      w-[38px]
-      h-[38px]
+            {/* Menu Icon */}
+            <button
+              className="
+                flex lg:hidden
 
-      rounded-md
-    "
-  >
+                items-center
+                justify-center
 
-    <div className="space-y-1">
+                w-[38px]
+                h-[38px]
 
-      <div className="w-5 h-[2px] bg-black rounded-full"></div>
-      <div className="w-5 h-[2px] bg-black rounded-full"></div>
-      <div className="w-5 h-[2px] bg-black rounded-full"></div>
+                rounded-md
+              "
+            >
 
-    </div>
+              <div className="space-y-1">
 
-  </button>
+                <div className="w-5 h-[2px] bg-black rounded-full"></div>
+                <div className="w-5 h-[2px] bg-black rounded-full"></div>
+                <div className="w-5 h-[2px] bg-black rounded-full"></div>
 
-</div>
+              </div>
 
-    </div>
-  </nav>
+            </button>
+
+          </div>
+
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <section className="px-8 lg:px-20 py-10 flex flex-col lg:flex-row items-center justify-between gap-16">
 
@@ -168,22 +172,22 @@ function App() {
 
             <span className="relative inline-block text-indigo-600">
 
-    Compliance
+              Compliance
 
-    {/* Underline Image */}
-    <img
-      src={UnderlineVector}
-      alt="underline"
-      className="
-        absolute
-        left-0
-        -bottom-3
+              {/* Underline Image */}
+              <img
+                src={UnderlineVector}
+                alt="underline"
+                className="
+                  absolute
+                  left-0
+                  -bottom-3
 
-        w-full
-      "
-    />
+                  w-full
+                "
+              />
 
-  </span>
+            </span>
 
             {' '}For
             <br />
@@ -197,363 +201,297 @@ function App() {
           </p>
 
           {/* Points */}
-         {/* Points */}
-<div className="mt-8 space-y-4">
+          <div className="mt-8 space-y-4">
 
-  <div className="flex items-center gap-3">
+            {[
+              "End-To-End Compliance Support",
+              "Regulatory Filings Made Simple",
+              "Tailored Solutions For Independent Analysts & Firms"
+            ].map((item, index) => (
+              <div key={index} className="flex items-center gap-3">
 
-    {/* Blue Circle With White Tick */}
-    <div
-      className="
-        w-6 h-6
-        bg-indigo-600
-        rounded-full
+                <div
+                  className="
+                    w-6 h-6
+                    bg-indigo-600
+                    rounded-full
 
-        flex
-        items-center
-        justify-center
-      "
-    >
+                    flex
+                    items-center
+                    justify-center
+                  "
+                >
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={3}
-        stroke="white"
-        className="w-3 h-3 opacity-90"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4.5 12.75l6 6 9-13.5"
-        />
-      </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={3}
+                    stroke="white"
+                    className="w-3 h-3 opacity-90"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
 
-    </div>
+                </div>
 
-    <p>End-To-End Compliance Support</p>
+                <p>{item}</p>
 
-  </div>
+              </div>
+            ))}
 
-  <div className="flex items-center gap-3">
-
-    <div
-      className="
-        w-6 h-6
-        bg-indigo-600
-        rounded-full
-
-        flex
-        items-center
-        justify-center
-      "
-    >
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={3}
-        stroke="white"
-        className="w-3 h-3 opacity-90"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4.5 12.75l6 6 9-13.5"
-        />
-      </svg>
-
-    </div>
-
-    <p>Regulatory Filings Made Simple</p>
-
-  </div>
-
-  <div className="flex items-center gap-3">
-
-    <div
-      className="
-        w-6 h-6
-        bg-indigo-600
-        rounded-full
-
-        flex
-        items-center
-        justify-center
-      "
-    >
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={3}
-        stroke="white"
-        className="w-3 h-3 opacity-90"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4.5 12.75l6 6 9-13.5"
-        />
-      </svg>
-
-    </div>
-
-    <p>Tailored Solutions For Independent Analysts & Firms</p>
-
-  </div>
-
-</div>
+          </div>
 
           {/* Buttons */}
-         <div className="mt-10 flex flex-col sm:flex-row gap-5">
+          <div className="mt-10 flex flex-col sm:flex-row gap-5">
 
-  <button
-    className="
-      w-[213px]
-      h-[46px]
+            <button
+              className="
+                w-[213px]
+                h-[46px]
 
-      bg-indigo-600
-      text-white
+                bg-indigo-600
+                text-white
 
+                rounded-lg
+                text-lg
+                font-medium
+              "
+            >
+              Get Started
+            </button>
 
-      rounded-lg
-      text-lg
-      font-medium
-    "
-  >
-    Get Started
-  </button>
+            <button
+              className="
+                w-[213px]
+                h-[46px]
+                border-2
+                border-indigo-600
 
-  <button
-    className="
-      w-[213px]
-      h-[46px]
-      border-2
-      border-indigo-600
+                text-indigo-600
 
-      text-indigo-600
+                rounded-lg
+                text-lg
+                font-medium
+              "
+            >
+              Book A Consultation
+            </button>
 
-     
-
-      rounded-lg
-      text-lg
-      font-medium
-    "
-  >
-    Book A Consultation
-  </button>
-
-</div>
+          </div>
 
         </div>
 
         {/* Right Image */}
-        <div className="relative  height-[607px] width-[739.13px]">
-         <img src={BannerImage} alt="banner" />
+        <div className="relative h-[607px] w-[739.13px]">
+
+          <img
+            src={BannerImage}
+            alt="banner"
+            className="w-full h-full object-contain"
+          />
 
         </div>
 
       </section>
-{/* Why Compliance Section */}
-{/* Why Compliance Section */}
-<section className="px-6 lg:px-20 py-20 bg-[#f5f5f7]">
 
-  <div className="grid lg:grid-cols-2 gap-14 items-start">
+      {/* Why Compliance Section */}
+      <section className="px-6 lg:px-20 py-20 bg-[#f5f5f7]">
 
-    {/* Left Side */}
-    <div>
+        <div className="grid lg:grid-cols-2 gap-14 items-start">
 
-      {/* Heading */}
-      <div className="relative inline-block">
-
-        <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
-
-          Why{" "}
-
-          <span className="text-[#4F5DE4]">
-            Compliance Matters
-          </span>
-
-          <br />
-
-          For Research Analysts
-
-        </h2>
-
-        {/* Curved Arrow Image */}
-        <img
-          src={Vector}
-          alt="arrow"
-          className="
-            absolute
-            -right-10
-            top-20
-
-            w-16
-            lg:w-20
-          "
-        />
-
-      </div>
-
-      {/* Main Illustration */}
-      <div className="mt-14">
-
-        <img
-          src={SectionImage}
-          alt="section"
-          className="w-full max-w-[500px]"
-        />
-
-      </div>
-    
-    </div>
-
-    {/* Right Side */}
-    <div>
-
-      {/* Paragraph */}
-      <p
-        className="
-          text-[#1E1E1E]
-          text-lg
-          leading-9
-        "
-      >
-        In Today’s Regulatory Environment, Even A Small
-        Oversight Can Lead To Penalties, Reputational Risks,
-        And Loss Of Client Trust. We Help Research Analysts
-        And Firms Navigate Complex Compliance Requirements
-        So They Can Focus On Delivering High-Quality
-        Research Without Worry.
-      </p>
-
-      {/* Cards */}
-      <div className="mt-12 space-y-6">
-
-        {/* Card 1 */}
-        <div
-          className="
-            bg-white
-            border
-            border-[#E5E7EB]
-
-            rounded-2xl
-
-            p-6
-
-            flex
-            gap-5
-          "
-        >
-
-          {/* Icon Image */}
-          <img
-            src={Regulatory}
-            alt="icon"
-            className="w-10 h-10"
-          />
-
+          {/* Left Side */}
           <div>
 
-            <h3 className="text-2xl font-semibold">
-              Regulatory Clarity
-            </h3>
+            {/* Heading */}
+            <div className="relative inline-block">
 
-            <p className="mt-3 text-gray-700 leading-8">
-              We Decode Complex Compliance Rules Into
-              Simple, Actionable Steps.
+              <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
+
+                Why{" "}
+
+                <span className="text-[#4F5DE4]">
+                  Compliance Matters
+                </span>
+
+                <br />
+
+                For Research Analysts
+
+              </h2>
+
+              {/* Arrow Image */}
+              <img
+                src={Vector}
+                alt="arrow"
+                className="
+                  absolute
+                  -right-10
+                  top-20
+
+                  w-16
+                  lg:w-20
+                "
+              />
+
+            </div>
+
+            {/* Main Illustration */}
+            <div className="mt-14">
+
+              <img
+                src={SectionImage}
+                alt="section"
+                className="w-full max-w-[500px]"
+              />
+
+            </div>
+
+          </div>
+
+          {/* Right Side */}
+          <div>
+
+            <p
+              className="
+                text-[#1E1E1E]
+                text-lg
+                leading-9
+              "
+            >
+              In Today’s Regulatory Environment, Even A Small
+              Oversight Can Lead To Penalties, Reputational Risks,
+              And Loss Of Client Trust. We Help Research Analysts
+              And Firms Navigate Complex Compliance Requirements
+              So They Can Focus On Delivering High-Quality
+              Research Without Worry.
             </p>
+
+            {/* Cards */}
+            <div className="mt-12 space-y-6">
+
+              {/* Card 1 */}
+              <div
+                className="
+                  bg-white
+                  border
+                  border-[#E5E7EB]
+
+                  rounded-2xl
+
+                  p-6
+
+                  flex
+                  gap-5
+                "
+              >
+
+                <img
+                  src={Regulatory}
+                  alt="icon"
+                  className="w-10 h-10"
+                />
+
+                <div>
+
+                  <h3 className="text-2xl font-semibold">
+                    Regulatory Clarity
+                  </h3>
+
+                  <p className="mt-3 text-gray-700 leading-8">
+                    We Decode Complex Compliance Rules Into
+                    Simple, Actionable Steps.
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* Card 2 */}
+              <div
+                className="
+                  bg-white
+                  border
+                  border-[#E5E7EB]
+
+                  rounded-2xl
+
+                  p-6
+
+                  flex
+                  gap-5
+                "
+              >
+
+                <img
+                  src={Hassle}
+                  alt="icon"
+                  className="w-10 h-10"
+                />
+
+                <div>
+
+                  <h3 className="text-2xl font-semibold">
+                    Hassle-Free Filings Clarity
+                  </h3>
+
+                  <p className="mt-3 text-gray-700 leading-8">
+                    From Registration To Ongoing Reporting—
+                    We Manage It End-To-End.
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* Card 3 */}
+              <div
+                className="
+                  bg-white
+                  border
+                  border-[#E5E7EB]
+
+                  rounded-2xl
+
+                  p-6
+
+                  flex
+                  gap-5
+                "
+              >
+
+                <img
+                  src={Risk}
+                  alt="icon"
+                  className="w-10 h-10"
+                />
+
+                <div>
+
+                  <h3 className="text-2xl font-semibold">
+                    Risk Protection
+                  </h3>
+
+                  <p className="mt-3 text-gray-700 leading-8">
+                    Stay Ahead Of Audits, Inspections, And
+                    Compliance Gaps With Proactive Support.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
 
         </div>
 
-        {/* Card 2 */}
-        <div
-          className="
-            bg-white
-            border
-            border-[#E5E7EB]
-
-            rounded-2xl
-
-            p-6
-
-            flex
-            gap-5
-          "
-        >
-
-          <img
-            src={Hassle}
-            alt="icon"
-            className="w-10 h-10"
-          />
-
-          <div>
-
-            <h3 className="text-2xl font-semibold">
-              Hassle-Free Filings Clarity
-            </h3>
-
-            <p className="mt-3 text-gray-700 leading-8">
-              From Registration To Ongoing Reporting—
-              We Manage It End-To-End.
-            </p>
-
-          </div>
-
-        </div>
-
-        {/* Card 3 */}
-        <div
-          className="
-            bg-white
-            border
-            border-[#E5E7EB]
-
-            rounded-2xl
-
-            p-6
-
-            flex
-            gap-5
-          "
-        >
-
-          <img
-            src={Risk}
-            alt="icon"
-            className="w-10 h-10"
-          />
-
-          <div>
-
-            <h3 className="text-2xl font-semibold">
-              Risk Protection
-            </h3>
-
-            <p className="mt-3 text-gray-700 leading-8">
-              Stay Ahead Of Audits, Inspections, And
-              Compliance Gaps With Proactive Support.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+      </section>
 
     </div>
   )
